@@ -25,15 +25,15 @@ const Everything = () => {
     },
   ];
   return (
-    <div className="w-full flex bg-green-100 p-10 mt-20">
-      <div className="w-2/4 pr-5">
-        <h2 className="text-4xl font-bold">The best part? Everything.</h2>
+    <div className="w-full flex max-sm:flex-col bg-green-100 p-10 mt-20">
+      <div className="w-2/4 max-sm:w-full pr-5">
+        <h2 className="text-4xl max-sm:text-3xl max-sm:text-center font-bold">The best part? Everything.</h2>
         <ul className="p-6 flex flex-col gap-4">
           {every.map(({ title, subtitle, key }) => (
             <li className="flex flex-col">
-              <h6 className="flex gap-2 items-center text-2xl font-bold pb-3">
+              <h6 className="flex gap-2 items-center text-2xl max-sm:text-xl font-bold pb-3">
                 <span>
-                  <BsCheck2Circle size={20} />
+                  <BsCheck2Circle size={30}  />
                 </span>
                 {title}
               </h6>
@@ -42,7 +42,7 @@ const Everything = () => {
           ))}
         </ul>
       </div>
-      <div className="w-2/4 flex justify-center p-8">
+      <div className="w-2/4 max-sm:w-full flex justify-center p-8 max-sm:p-3">
         <img src="/videoImage.png" alt="Best services" />
       </div>
     </div>

@@ -14,17 +14,17 @@ const HeroBanner = () => {
     return () => clearInterval(inetrval);
   }, [image]);
   return (
-    <div className="h-[680px] relative bg-cover">
+    <div className="h-[800px] max-sm:h-[900px] w-screen relative bg-cover">
       <div>
         <Image
           fill
-          className="opacity-98"
+          className="opacity-98 bg-cover w-full"
           src={`/bg-hero${image}.webp`}
           alt="hero-image"
         />
       </div>
       <div className="absolute top-[40%] left-4 w-[60%] text-white text-start flex flex-col gap-4 flex-wrap">
-        <p className="text-4xl font-bold w-[60%]">
+        <p className="text-4xl max-sm:text-2xl font-bold w-[60%]">
           Find the right <i>freelance service,</i> right away
         </p>
         <div className="flex item-center">

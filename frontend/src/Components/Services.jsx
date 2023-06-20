@@ -45,8 +45,8 @@ const Services = () => {
   ];
   return (
     <div className="w-full p-6 mt-16">
-      <h2 className="text-4xl font-bold pl-6 ">You need it, we've got it</h2>
-      <ul className="grid grid-cols-5 place-items-center pt-12">
+      <h2 className="text-4xl max-sm:text-2xl font-bold pl-6 ">You need it, we've got it</h2>
+      <ul className="grid grid-cols-5 max-sm:grid-cols-3 place-items-center pt-12">
         {services.map(({ image, text, key }) => (
           <li className="flex flex-col items-center gap-3 pb-10">
             <img

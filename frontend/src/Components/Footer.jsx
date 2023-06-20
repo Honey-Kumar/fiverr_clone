@@ -132,8 +132,8 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="w-full p-8 bg-slate-200">
-      <ul className="flex justify-between pb-4">
+    <div className="w-screen p-8 bg-slate-200">
+      <ul className="flex flex-wrap max-sm:flex-col justify-between pb-4">
         {footer.map(({ title, key, list }) => (
           <div key={key}>
             <h2 className="text-2xl font-bold pb-5">{title}</h2>
@@ -148,8 +148,8 @@ const Footer = () => {
         ))}
       </ul>
       <hr className="bg-green-500 h-1" />
-      <div className="w-full flex items-center pt-4">
-        <div className="flex gap-3 items-center text-l w-2/4">
+      <div className="w-full flex max-sm:flex-col items-center pt-4">
+        <div className="flex max-sm:flex-col gap-3 items-center text-l w-2/4">
           <div className="flex items-center gap-2">
             <h1 className="text-4xl font-bold">fiverr</h1>
             <span className="h-2 w-2 rounded-full bg-green-700 flex "></span>

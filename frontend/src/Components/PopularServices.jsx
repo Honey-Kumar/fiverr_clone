@@ -66,8 +66,8 @@ const PopularServices = () => {
   ];
   return (
     <div>
-      <h1 className="text-4xl font-bold pl-6">Popular Services</h1>
-      <ul className="flex flex-wrap gap-5 justify-evenly pt-8 text-white ">
+      <h1 className="text-4xl max-sm:text-2xl font-bold pl-6">Popular Services</h1>
+      <ul className="flex max-sm:flex-col flex-wrap gap-5 items-center justify-evenly pt-8 text-white ">
         {services.map(({ name, text, image, key }) => (
           <li
             key={key}

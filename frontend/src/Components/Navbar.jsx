@@ -36,7 +36,7 @@ const Navbar = () => {
       <div
         className={`w-full flex flex-col p-4 items-center ${theme} fixed top-0 left-0 right-0 z-30`}
       >
-        <div className="w-full flex pb-3 items-center">
+        <div className="w-full flex max-sm:flex-col max-sm:justify-center pb-5 items-center">
           <div className="w-2/4 flex gap-3 items-center">
             <div>
               <button class="relative group">
@@ -64,8 +64,8 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className="w-2/4 pr-5">
-            <ul className="flex justify-end items-center gap-4 text-l font-bold">
+          <div className="w-2/4 max-sm:w-full pr-5 max-sm:pr-0 max-sm:flex max-sm:items-center">
+            <ul className="flex justify-end max-sm:justify-center items-center gap-4 text-l max-sm:hidden font-bold">
               <li className="hover:text-green-500 text-blue-600">
                 Fiverr Business
               </li>
@@ -73,7 +73,7 @@ const Navbar = () => {
               <li className="hover:text-green-500">Become a Seller</li>
               <li className="hover:text-green-500">Sign in</li>
               <li className="hover:text-green-500">
-                <button className="hover:bg-green-500 hover:text-white pl-4 pr-4 pt-2 pb-2 border rounded-sm">
+                <button className="hover:bg-green-500 max-sm:visible hover:text-white pl-4 pr-4 pt-2 pb-2 border rounded-sm">
                   join
                 </button>
               </li>

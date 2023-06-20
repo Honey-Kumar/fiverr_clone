@@ -66,8 +66,8 @@ const FiverrBussiness = () => {
 
   return (
     <>
-      <div className="w-full bg-blue-900 flex pt-20 pb-20 pl-6 pr-6 text-white">
-        <div className="w-2/4 flex flex-col gap-6 pr-4">
+      <div className="w-full bg-blue-900 flex items-center max-sm:flex-col pt-20 pb-20 pl-6 pr-6 text-white">
+        <div className="w-2/4 max-sm:w-full flex max-sm:items-center flex-col gap-6 pr-4 max-sm:pr-0">
           <h2 className="text-4xl font-bold">
             fiverr business
             <span className="w-24 h-24 font-bold text-green-600">.</span>
@@ -90,11 +90,11 @@ const FiverrBussiness = () => {
               </li>
             ))}
           </ul>
-          <button className="pl-5 pr-5 pt-2 pb-2 bg-green-500 hover:bg-green-600 rounded-lg font-bold">
+          <button className="pl-5 pr-5 pt-2 pb-2 max-sm:w-full bg-green-500 hover:bg-green-600 rounded-lg font-bold">
             Explore Fiverr Business
           </button>
         </div>
-        <div className="w-2/4">
+        <div className="w-2/4 max-sm:w-full max-sm:pt-10">
           <img
             src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_585,dpr_2.0/v1/attachments/generic_asset/asset/d9c17ceebda44764b591a8074a898e63-1599597624759/business-desktop-585-x2.png"
             alt="fiverr business"
@@ -104,13 +104,13 @@ const FiverrBussiness = () => {
 
       {/* section */}
       <div className="w-full mt-20 mb-20">
-        <ul className="flex flex-wrap gap-4">
+        <ul className="flex max-sm:flex-col flex-wrap gap-4">
           {sliderinfo.map(({ image, founder, des, key }) => (
-            <li key={key} className="flex p-4">
-              <div className="w-2/4">
+            <li key={key} className="flex max-sm:flex-col p-4">
+              <div className="w-2/4 max-sm:w-full">
                 <img src={image} alt="reviews" className="rounded-lg" />
               </div>
-              <div className="w-2/4 p-4 flex flex-col justify-center">
+              <div className="w-2/4 max-sm:w-full p-4 flex flex-col justify-center">
                 <h2 className="text-2xl pb-4">{founder}</h2>
                 <i className="text-xl font-bold">"{des}"</i>
               </div>
@@ -120,28 +120,29 @@ const FiverrBussiness = () => {
       </div>
 
       {/* image section */}
-      <div className="w-full flex bg-blue-600 p-8 relative">
-        <img
-          src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1112,dpr_2.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png"
-          alt="fiverr services"
-          className="bg-cover w-full h-full p-4"
-        />
-        <div className="w-2/4 flex flex-col gap-6 pr-4 pl-6 pb-5 absolute top-10 text-white left-0">
-          <h2 className="text-4xl font-bold">
+      <div className="w-full h-[500px] max-sm:h-[450px] max-sm:flex-col max-sm:justify-center flex bg-blue-600 max-sm:opacity-80 p-8 relative">
+        <div className="max-sm:flex-col">
+          <img
+            src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1112,dpr_2.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png"
+            alt="fiverr services"
+          />
+        </div>
+        <div className="w-2/4 max-sm:w-full flex flex-col gap-6 pr-4 pl-6 pb-5 absolute top-10 text-white left-0">
+          <h2 className="text-4xl max-sm:text-l font-bold">
             fiverr Logo maker
             <span className="w-24 h-24 font-bold text-green-600">.</span>
             <sup className="text-sm bg-purple-700 pl-2 pr-2 rounded-lg">
               NEW
             </sup>
           </h2>
-          <span className="text-2xl font-bold">
+          <span className="text-2xl max-sm:text-l font-bold">
             Make an incredible logo <i>in Seconds</i>
           </span>
-          <p className="text-xl">
+          <p className="text-xl max-sm:text-l">
             Pre-designed by top talent. Just add your touch.
           </p>
           <ul></ul>
-          <button className="pl-5 pr-5 pt-2 pb-2 bg-green-500 hover:bg-green-600 rounded-lg font-bold">
+          <button className="pl-5 pr-5 pt-2 pb-2 max-sm:pt-1 max-sm:pb-1 bg-green-500 hover:bg-green-600 rounded-lg font-bold max-sm:font-none">
             Try Fiverr Logo Maker
           </button>
         </div>
